@@ -1,0 +1,43 @@
+.center{
+    justify-content:center;
+    align-items: center;
+}
+.parent {
+    margin: 5%;
+}
+.userinput {
+    align-items: flex-start;
+    margin-top: 10%;
+    margin-bottom: 10px;
+    border-width: 1;
+    border-color: lightgray;
+    padding: 16px;
+    border-radius: 4;
+}
+.passwordinput {
+    align-items: flex-start;
+    margin-top: 10px;
+    margin-bottom: 5%;
+    border-width: 1;
+    border-radius: 5;
+    border-color: lightgray;
+    padding: 16px;
+}
+.buttonnormal {
+    color: #fff;
+    font-size: 14;
+    background-color: #000;
+    border-radius: 2;
+    text-transform: uppercase;
+    padding:10;
+    margin: 10 0;
+}
+.buttonactive {
+    color: #fff;
+    font-size: 14;
+    background-color: cornflowerblue;
+    border-radius: 2;
+    text-transform: uppercase;
+    padding:10;
+    margin: 10 0;
+}

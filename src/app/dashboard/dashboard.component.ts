@@ -11,5 +11,12 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit() {
   }
+  onShare() {
+    alert('shared')
+  }
+
+  onDelete() {
+    alert('delete');
+  }
 
 }

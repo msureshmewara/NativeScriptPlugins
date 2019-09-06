@@ -1,12 +1,13 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <ActionBar [title]="title"></ActionBar>
-<StackLayout  class="p-20">
+<StackLayout  
+verticalAlignment="center" class="parent">
     <Label text="Welcome to {{ title }}!" class="h1 text-center" textWrap="true"></Label>
     
-    <Label text="Required Textfield" class="h1 text-center"></Label>
-    <TextField required hint="fill this out..." [(ngModel)]="textField" #element></TextField>
+    <TextField required hint="Enter user name" class="userinput"></TextField>
+    <TextField required hint="Enter password" secure=true class="passwordinput"></TextField>
     
-    <Button class="btn btn-primary btn-active" id="button" text="Login" (tap)="onTap()"></Button>
+    <Button class="buttonactive" id="button" text="Login" (tap)="onTap()"></Button>
     
 
 </StackLayout>

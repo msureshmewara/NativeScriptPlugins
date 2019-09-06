@@ -1,12 +1,20 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<ActionBar [title]="title"></ActionBar>
-<StackLayout  class="p-20">
-    <Label text="Welcome to {{ title }}!" class="h1 text-center" textWrap="true"></Label>
+<ActionBar [title]="title">
+        <!-- <NavigationButton visibility="collapsed"></NavigationButton> -->
+    <!-- <ActionItem (tap)="onShare()"
+        ios.systemIcon="9" ios.position="left"
+        android.systemIcon="ic_menu_share" 
+        android.position="actionBar"></ActionItem> -->
+    <ActionItem (tap)="onDelete()"
+        ios.systemIcon="16" 
+        ios.position="right"
+        android.systemIcon="ic_menu_delete" 
+        android.position="actionBar">
+    </ActionItem>
+  </ActionBar>
+<StackLayout  verticalAlignment="center">
+    <Label text="Welcome to Dashboard" class="h1 text-center" textWrap="true"></Label>
     
-    <Label text="Required Textfield" class="h1 text-center"></Label>
-    <TextField required hint="fill this out..." [(ngModel)]="textField" #element></TextField>
-    
-    <Button class="btn btn-primary btn-active" id="button" text="Login" (tap)="onTap()"></Button>
     
 
 </StackLayout>
